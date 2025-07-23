@@ -1,0 +1,63 @@
+# ~/.config/starship.toml
+add_newline = false
+
+[line_break]
+disabled = true
+
+[username]
+format = "[$user]($style)"
+style_user = "bright-white"
+show_always = true
+disabled = false
+
+[character]
+success_symbol = "[❯❯](bold green)"
+error_symbol = "[❯❯](bold red)"
+
+[hostname]
+ssh_only = false
+format =  "@[$hostname:](bold #50C878)"
+
+[package]
+disabled = true
+
+[git_state]
+format = "[$state($progress_current/$progress_total)]($style) "
+style = "bold bright-purple"
+disabled = false
+cherry_pick = "[🍒PICKING](bold bright-red)"
+
+[git_branch]
+symbol = "🌱"
+truncation_length = 4
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
+
+[aws]
+disabled = true
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncate_to_repo = false
+truncation_symbol = "~"
+
+[python]
+format = "[(${virtualenv}) ${symbol}${version}]($style) "
+style = "bold bright-yellow"
+symbol = "🐍"
+
+[nodejs]
+format = "[$symbol$version]($style) "
+style = "bold bright-purple"
+symbol = "🤖"
+
+[ruby]
+format = "[$symbol$version]($style) "
+style = "bold bright-red"
+symbol = "💎"
+
+[rust]
+format = "[$symbol$version]($style) "
+style = "bold bright-red"
+symbol = "🦀"

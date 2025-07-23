@@ -1,0 +1,45 @@
+general.import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.75
+decorations = "None"
+decorations_theme_variant = "Dark"
+dimensions = {columns = 130, lines = 55}
+position = {x = 0, y = 0}
+padding = {x = 20, y = 20}
+blur = true
+startup_mode = "Windowed"
+
+[font]
+size = 20.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[scrolling]
+history = 25000
+
+[cursor]
+style = {shape = "Block", blinking = "Always"}
+blink_interval = 650
+blink_timeout = 30
+unfocused_hollow = true
+thickness = 0.15
