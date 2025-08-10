@@ -11,28 +11,30 @@
   "gtk-layer-shell": true,
   "reload_style_on_change": true,
   "modules-left": [
-    "custom/spacer",
-    "custom/mylinux",
-    "custom/spacer",
-    "hyprland/workspaces",
-    "custom/spacer",
-    "mpris"
+      "custom/spacer",
+      "custom/mylinux",
+      "custom/spacer",
+      "hyprland/workspaces",
+      "custom/spacer",
+      "mpris"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "custom/weather",
-    "custom/numlock",
-    "cpu",
-    "memory",
-    "idle_inhibitor",
-    "network",
-    "custom/vpn",
-    "pulseaudio",
-    "battery",
-    "custom/notification",
-    "custom/spacer"
+      "custom/weather",
+      "disk",
+      "cpu",
+      "memory",
+      "custom/vpn",
+      "pulseaudio",
+      "battery",
+      "idle_inhibitor",
+      "custom/numlock",
+      "network",
+      "custom/notification",
+      "custom/poweroff",
+      "custom/spacer"
   ],
   "tray": {
     "icon-size": 18,
@@ -51,24 +53,41 @@
       "paused": "▶"
     }
   },
-  "memory": {
-     "format": "{icon}",
-     "format-icons": ["󰝦","󰪞","󰪟","󰪠","󰪡","󰪢","󰪣","󰪤","󰪥"],
-     "rotate": 270,
-     "interval": 10
+  "disk": {
+      "path": "/home",
+      "format": " {percentage_used}% of {total}",
+      "interval": 30,
+      "tooltip": true
   },
-  "cpu": {
-     "format": "{icon}",
-     "interval": 1,
-     "rotate": 270,
-     "format-icons":  ["󰝦","󰪞","󰪟","󰪠","󰪡","󰪢","󰪣","󰪤","󰪥"],
+  "memory": {
+    "interval": 5,
+    "format": " {percentage}%",
+    "format-alt": "{used:0.1f}G/{total:0.1f}G",
+    "tooltip-format": "Memory: {used:0.1f}G / {total:0.1f}G ({percentage}%)",
+    "states": {
+        "warning": 70,
+        "critical": 90
+    }
+  },
+ "cpu": {
+     "interval": 5,
+     "format": "{icon}{usage}%",
+     "format-icons": [""],
+     "on-click": "kitty --hold htop",
+     "on-click-right": "pkill waybar & hyprctl dispatch exec waybar"
   },
   "custom/mylinux": {
      "format": ""
   },
+  "custom/poweroff": {
+      "format": "{icon}",
+      "format-icons": "",
+      "on-click": "wlogout"
+
+  },
   "custom/numlock": {
      "format": "",
-     "exec": "~/.config/waybar/ledstate.sh",
+     "exec": "~/.config/waybar/scripts/ledstate.sh",
      "interval": 20,
      "return-type": "json",
      "tooltip": true
@@ -81,7 +100,7 @@
       "return-type": "json"
   },
   "custom/notification": {
-    "tooltip": false,
+    "tooltip": true,
     "format": "{icon}",
     "format-icons": {
       "notification": "󰅸 ",

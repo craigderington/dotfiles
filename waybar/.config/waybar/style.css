@@ -15,21 +15,31 @@
 }
 
 window#waybar {
-    background: #11111b;
+    background: transparent;
     /*  border-radius: 15px; */
     /*  border: 2px solid #124323; */
     /* border: 0px solid #A1BDCE; */
-    border: 3px solid #181825;
+    border: 1px solid #11111b;
     border-radius: 7px;
 }
 
+window#waybar.background {
+    background:rgba(17, 17, 27, 0.25);
+}
 
 tooltip {
-    background: #171717;
-    color: #A1BDCE;
-    font-size: 16px;
+    color: #f2f2f2;
+    font-size: 14px;
     border-radius: 7px;
-    border: 2px solid #101a24;
+    border: 2px solid #11111b;
+}
+
+tooltip * {
+	background:	transparent;
+}
+
+tooltip.background {
+	background:	rgba(29,32,33,0.8);
 }
 
 #workspaces{
@@ -215,19 +225,16 @@ tooltip {
 
 #cpu {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     color: #1e66f5;
-    margin: 0px 0px 5px 0px;
+    margin: 0px 8px 3px 0px;
 }
 
-#custom-led{
-    background: #11111b;
-    color: #dce0e8;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    padding-left: 6px;
-    border-radius: 7px;
-    margin-right: 6px;
+#disk {
+    font-weight: 500;
+    font-size: 20px;
+    color:#7287fd;
+    margin: 0px 12px 3px 0px;
 }
 
 #custom-gpuinfo,
@@ -235,9 +242,16 @@ tooltip {
 #language,
 #memory{
     font-weight: bold;
+    font-size: 20px;
+    color: #f3cc0b;
+    margin: 0px 7px 3px 7px;
+}
+
+#custom-poweroff {
+    font-weight: 500;
     font-size: 25px;
-    color: #f3640b;
-    margin: 0px 0px 5px 0px;
+    color:#1e66f5;
+    margin: 0px 14px 0px 10px; 
 }
 
 #mpris{
