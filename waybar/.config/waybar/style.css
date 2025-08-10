@@ -146,7 +146,7 @@ tooltip.background {
 #custom-power{
     font-size: 20px;
     color: #FFFFFF;
-    background:  rgba(22, 19, 32, 0.9);
+    background:  rgba(17, 17, 27, 0.25);
     margin: 6px 0px 6px 0px;
     padding-left: 4px;
     padding-right: 4px;
@@ -178,7 +178,7 @@ tooltip.background {
     font-weight: bold;
     font-size: 20px;
     color: #40a02b;
-    background: #11111b;
+    background: transparent;
     opacity: 1;
     margin: 0px 0px 0px 0px;
     padding-left: 0px;
@@ -201,7 +201,7 @@ tooltip.background {
     font-size: 20px;
     font-weight: bold;
     font-family: "JetBrains Mono Nerd Font";
-    background: rgba(17, 17, 17, 0.0);
+    background: rgba(17, 17, 27, 0.20);
     opacity: 1;
     margin: 2px 0px 0px 0px;
     padding-left: 8px;
@@ -214,7 +214,7 @@ tooltip.background {
     font-weight: bold;
     font-size: 20px;
     color: #04a5e5;
-    background: #11111b;
+    background: transparent;
     opacity: 1;
     margin: 0px 4px 0px 0px;
     padding-left: 2px;
@@ -273,7 +273,7 @@ tooltip.background {
 
 #network{
     color: #dce0e8;
-    background: #11111b;
+    background: transparent;
     font-weight: bold;
     font-size: 25px;
     margin: 0px 7px 0px 0px;
@@ -283,7 +283,7 @@ tooltip.background {
 }
 
 #custom-vpn {
-    background: #11111b;
+    background: transparent;
     color: #dce0e8;
     font-size: 18px;
     margin: 0px 4px 0px 4px;
