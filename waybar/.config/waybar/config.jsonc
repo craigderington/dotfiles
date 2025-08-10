@@ -71,13 +71,13 @@
   },
  "cpu": {
      "interval": 5,
-     "format": "{icon}{usage}%",
+     "format": "{icon} {usage}%",
      "format-icons": [""],
      "on-click": "kitty --hold htop",
      "on-click-right": "pkill waybar & hyprctl dispatch exec waybar"
   },
   "custom/mylinux": {
-     "format": ""
+     "format": ""
   },
   "custom/poweroff": {
       "format": "{icon}",
