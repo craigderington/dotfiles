@@ -180,10 +180,10 @@ tooltip {
 #idle_inhibitor{
     color: #d20f39;
     font-size: 23px;
+    font-weight: bold;
     background: @bar-bg;
     opacity: 1;
-    margin: 1px 4px 0px 4px;
-
+    margin: 1px 14px 0px 4px;
 }
 
 #clock{
@@ -214,15 +214,15 @@ tooltip {
 }
 
 #cpu {
-    font-weight: normal;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 26px;
     color: #1e66f5;
     margin: 0px 0px 5px 0px;
 }
 
 #custom-led{
-    background: #427287;
-    color: #FFFFFF;
+    background: #11111b;
+    color: #dce0e8;
     margin-top: 7px;
     margin-bottom: 7px;
     padding-left: 6px;
@@ -237,7 +237,7 @@ tooltip {
     font-weight: bold;
     font-size: 25px;
     color: #f3640b;
-    margin: 0px 0px 5px 0px
+    margin: 0px 0px 5px 0px;
 }
 
 #mpris{
@@ -258,7 +258,7 @@ tooltip {
 }
 
 #network{
-    color: #89b4fa;
+    color: #dce0e8;
     background: #11111b;
     font-weight: bold;
     font-size: 25px;
@@ -270,10 +270,67 @@ tooltip {
 
 #custom-vpn {
     background: #11111b;
-    color: #f5e0dc;
+    color: #dce0e8;
     font-size: 18px;
     margin: 0px 4px 0px 4px;
-    border-radius: 7px;
+}
+
+#custom-numlock.active {
+    color: #8839ef;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1px 14px 0px 0px;
+}
+
+#custom-numlock.inactive {
+    color: #8c8fa1;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0px 14px 0px 0px;
+}
+
+#custom-mylinux {
+    color: #04a5e5;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
+}
+
+#custom-weather {
+    color: #df8e1d;
+    background: #11111b;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 8px 0px 0px;
+}
+
+#custom-weather.overcast,
+#custom-weather.cloudy,
+#custom-weather.fog,
+#custom-weather.partly_cloudy {
+    color: #7c7f93;
+}
+
+#custom-weather.clear,
+#custom-weather.fair,
+#custom-weather.sunny {
+    color: #df8e1d;
+}
+
+#custom-weather.light_rain,
+#custom-weather.heavy_rain,
+#custom-weather.moderate,
+#custom-weather.patchy_rain,
+#custom-weather.rain {
+    color: #1e66f5;
+}
+
+#custom-weather.mist {
+    color: #7278fd;
+}
+
+#custom-weather.thunderstorm {
+    color: #4c4f69;
 }
 
 #custom-notifications,
@@ -310,7 +367,7 @@ tooltip {
 }
 
 #mpris{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold
 }
 

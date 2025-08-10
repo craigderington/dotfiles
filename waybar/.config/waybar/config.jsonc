@@ -12,6 +12,8 @@
   "reload_style_on_change": true,
   "modules-left": [
     "custom/spacer",
+    "custom/mylinux",
+    "custom/spacer",
     "hyprland/workspaces",
     "custom/spacer",
     "mpris"
@@ -20,6 +22,8 @@
     "clock"
   ],
   "modules-right": [
+    "custom/weather",
+    "custom/numlock",
     "cpu",
     "memory",
     "idle_inhibitor",
@@ -58,6 +62,23 @@
      "interval": 1,
      "rotate": 270,
      "format-icons":  ["󰝦","󰪞","󰪟","󰪠","󰪡","󰪢","󰪣","󰪤","󰪥"],
+  },
+  "custom/mylinux": {
+     "format": ""
+  },
+  "custom/numlock": {
+     "format": "",
+     "exec": "~/.config/waybar/ledstate.sh",
+     "interval": 20,
+     "return-type": "json",
+     "tooltip": true
+  },
+  "custom/weather": {
+      "format": "{}°",
+      "tooltip": true,
+      "interval": 3600,
+      "exec": "wttrbar --location 32808 --nerd --fahrenheit --lang en --mph",
+      "return-type": "json"
   },
   "custom/notification": {
     "tooltip": false,
@@ -164,8 +185,8 @@
     "format": "{icon}",
     "rotate": 0,
     "format-icons": {
-      "deactivated": " ",
-      "activated": " "
+      "deactivated": "",
+      "activated": ""
     }
   },
   "clock": {
