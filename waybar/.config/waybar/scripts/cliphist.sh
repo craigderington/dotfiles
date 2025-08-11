@@ -19,7 +19,7 @@ if ! command -v "wl-paste" >/dev/null 2>&1; then
     exit 1
 fi
 
-if ! wl-paste --help | grep -Eq "\W\--watch\W"; then
+if ! wl-paste --help | grep -Eq "\W --watch\W"; then
     echo "your version of wl-clipboard doesn't have \`wl-paste --watch\`" >&2
     echo "please upgade" >&2
     echo "https://github.com/bugaevc/wl-clipboard" >&2
@@ -29,7 +29,7 @@ fi
 set +m
 shopt -s lastpipe
 
-hist_dir=~/".local/share"
+hist_dir="~/.local/share"
 hist_path="$hist_dir/cliphist"
 hist_sum_path="$hist_dir/cliphist_sum"
 hist_sep='…'

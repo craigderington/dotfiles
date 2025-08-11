@@ -146,7 +146,7 @@ tooltip.background {
 #custom-power{
     font-size: 20px;
     color: #FFFFFF;
-    background:  rgba(17, 17, 27, 0.25);
+    background:  transparent;
     margin: 6px 0px 6px 0px;
     padding-left: 4px;
     padding-right: 4px;
@@ -154,7 +154,7 @@ tooltip.background {
 
 #backlight{
     color: #2096C0;
-    background: rgba(23, 23, 23, 0.0);
+    background: transparent;
     font-weight: normal;
     font-size: 19px;
     margin: 1px 0px 0px 0px;
@@ -175,16 +175,12 @@ tooltip.background {
 }
 
 #battery{
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
     color: #40a02b;
     background: transparent;
     opacity: 1;
-    margin: 0px 0px 0px 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-radius: 7px;
- 
+    margin: 0px 0px 0px 0px; 
 }
 
 #idle_inhibitor{
@@ -199,9 +195,9 @@ tooltip.background {
 #clock{
     color: #7287fd;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 300;
     font-family: "JetBrains Mono Nerd Font";
-    background: rgba(17, 17, 27, 0.20);
+    background: transparent;
     opacity: 1;
     margin: 2px 0px 0px 0px;
     padding-left: 8px;
@@ -211,37 +207,33 @@ tooltip.background {
 }
 
 #pulseaudio {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
     color: #04a5e5;
     background: transparent;
     opacity: 1;
     margin: 0px 4px 0px 0px;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 7px;
-
 }
 
 #cpu {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
     color: #1e66f5;
-    margin: 0px 8px 3px 0px;
+    margin: 0px 10px 3px 0px;
 }
 
 #disk {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     color:#7287fd;
-    margin: 0px 12px 3px 0px;
+    margin: 0px 10px 3px 0px;
 }
 
 #custom-gpuinfo,
 #custom-keybindhint,
 #language,
 #memory{
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
     color: #f3cc0b;
     margin: 0px 7px 3px 7px;
@@ -272,21 +264,19 @@ tooltip.background {
 }
 
 #network{
-    color: #dce0e8;
+    color: #74c7ec;
     background: transparent;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0px 7px 0px 0px;
-    padding-right: 2px;
-    padding-left: 2px;
-    border-radius: 7px;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px 4px 0px 0px;
 }
 
 #custom-vpn {
     background: transparent;
     color: #dce0e8;
     font-size: 18px;
-    margin: 0px 4px 0px 4px;
+    font-weight: normal;
+    margin: 0px 12px 0px 4px;
 }
 
 #custom-numlock.active {
@@ -306,21 +296,22 @@ tooltip.background {
 #custom-mylinux {
     color: #04a5e5;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 300;
     margin: 0px 0px 0px 5px;
 }
 
 #custom-weather {
     color: #df8e1d;
-    background: #11111b;
+    background: transparent;
     font-size: 20px;
-    font-weight: 400;
-    margin: 0px 8px 0px 0px;
+    font-weight: 300;
+    margin: 0px 10px 0px 0px;
 }
 
 #custom-weather.overcast,
 #custom-weather.cloudy,
 #custom-weather.fog,
+#custom-weather.mostly_cloudy,
 #custom-weather.partly_cloudy {
     color: #7c7f93;
 }
@@ -381,8 +372,8 @@ tooltip.background {
 }
 
 #mpris{
-    font-size: 14px;
-    font-weight: bold
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #custom-rr_end {

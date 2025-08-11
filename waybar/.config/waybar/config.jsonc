@@ -27,11 +27,11 @@
       "cpu",
       "memory",
       "custom/vpn",
+      "network",
       "pulseaudio",
       "battery",
-      "idle_inhibitor",
       "custom/numlock",
-      "network",
+      "idle_inhibitor",
       "custom/notification",
       "custom/poweroff",
       "custom/spacer"
@@ -55,7 +55,7 @@
   },
   "disk": {
       "path": "/home",
-      "format": " {percentage_used}% of {total}",
+      "format": " {percentage_used}%/{total}",
       "interval": 30,
       "tooltip": true
   },
@@ -71,8 +71,7 @@
   },
  "cpu": {
      "interval": 5,
-     "format": "{icon}{usage}%",
-     "format-icons": [""],
+     "format": "&#xf109; {usage}%",
      "on-click": "kitty --hold htop",
      "on-click-right": "pkill waybar & hyprctl dispatch exec waybar"
   },
@@ -209,7 +208,7 @@
     }
   },
   "clock": {
-    "format": "{:%H:%M}",
+    "format": "{:%a %b %e | %H:%M}",
     "rotate": 0,
     "on-click": "/usr/local/bin/ags -t ActivityCenter",
     "tooltip-format": "<tt>{calendar}</tt>",
@@ -262,7 +261,7 @@
   },
   "network": {
     "tooltip": true,
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon} {essid}",
     "format-icons": ["󰤟","󰤢","󰤥"],
     "rotate": 0,
     "format-ethernet": "󰈀",
