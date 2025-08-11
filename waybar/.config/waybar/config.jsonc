@@ -32,7 +32,8 @@
       "battery",
       "custom/numlock",
       "idle_inhibitor",
-      "custom/notification",
+      "custom/notifications",
+      "custom/clipman",
       "custom/poweroff",
       "custom/spacer"
   ],
@@ -98,18 +99,12 @@
       "exec": "wttrbar --location 32808 --nerd --fahrenheit --lang en --mph",
       "return-type": "json"
   },
-  "custom/notification": {
+  "custom/notifications": {
     "tooltip": true,
     "format": "{icon}",
     "format-icons": {
-      "notification": "󰅸 ",
-      "none": "󰂜",
-      "dnd-notification": "󰅸 ",
-      "dnd-none": "󱏨 ",
-      "inhibited-notification": "󰅸 ",
-      "inhibited-none": "󰂜 ",
-      "dnd-inhibited-notification": "󰅸 ",
-      "dnd-inhibited-none": "󱏨 "
+        "notification": "󰅸 ",
+        "none": "󰂜"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -165,15 +160,13 @@
       "on-click-right": "mode"
     }
   },
-  "custom/cliphist": {
-    "format": " {} ",
+  "custom/clipman": {
+    "format": " ",
     "rotate": 0,
-    "exec": "echo ; echo 󰅇 clipboard history",
-    "on-click": "sleep 0.1 && cliphist.sh c",
-    "on-click-right": "sleep 0.1 && cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && cliphist.sh w",
+    "on-click": "clipman pick -t wofi -T'--prompt=clipman -i'", 
     "interval": 86400,
-    "tooltip": true
+    "tooltip": true,
+    "tooltip-format": "show clipman history"
   },
   "custom/wbar": {
     "format": "{}",
