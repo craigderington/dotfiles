@@ -17,14 +17,14 @@ window#waybar {
     background: transparent;    
     border: 1px solid #11111b;
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
 }
 
 tooltip {
     color: #f2f2f2;
     font-size: 14px;
     border-radius: 7px;
-    border: 2px solid #11111b;
+    border: 3px solid #11111b;
 }
 
 tooltip * {
@@ -32,14 +32,14 @@ tooltip * {
 }
 
 tooltip.background {
-	background:	rgba(29,32,33,0.8);
+	background:	rgba(17,17,27,0.65);
 }
 
 #workspaces{
-    background: rgba(23, 23, 23, 0.0);
+    background: transparent;
     color: #888789;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     border-radius: 9px;
     transition: 0.2s ease;
     padding-left: 4px;
@@ -47,29 +47,25 @@ tooltip.background {
     padding-top: 1px;
 }
 
-
 #workspaces button {
-    background: rgba(23, 23, 23, 0.0);
+    background: transparent;
     color: #7287fd;
-    box-shadow: none;
-	text-shadow: none;
-    border-radius: 9px;
+    font-weight: 500;
     transition: 0.2s ease;
     padding-left: 4px;
     padding-right: 4px;
 }
 
-
-
 #workspaces button.active {
-    color: #7287fd;
+    color: #fe640b;
+    font-weight: 800;
     transition: all 0.3s ease;
     padding-left: 4px;
     padding-right: 4px;
 }
 
 #workspaces button:hover {
-    background: #11111b;
+    background: transparent;
     color: #dce0e8;
     animation: ws_hover 20s ease-in-out 1;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -153,12 +149,20 @@ tooltip.background {
  
 }
 
-#bluetooth,
-#custom-cliphist{
-    color: #E6E7E7;
-    background: #161320;
-    opacity: 1;
-    margin: 4px 0px 4px 0px; 
+#custom-firefox {
+    color: #ea76cb;
+    background: transparent;
+    font-weight: 500;
+    font-size: 22;
+    margin: 5px 10px 0px 12px;
+}
+
+#bluetooth {
+    color: #ffffff;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5px 10px 4px 0px; 
 }
 
 #battery{
@@ -177,7 +181,7 @@ tooltip.background {
     margin: 1px 14px 0px 4px;
 }
 
-#custom-clipman {
+#custom-cliphist {
     color: #ffffff;
     font-weight: 300;
     font-size: 20px;
@@ -187,7 +191,7 @@ tooltip.background {
 #clock{
     color: #7287fd;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     font-family: "JetBrains Mono Nerd Font";
     background: transparent;
     margin: 2px 0px 0px 0px;
@@ -198,7 +202,7 @@ tooltip.background {
 }
 
 #pulseaudio {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
     color: #04a5e5;
     background: transparent;
@@ -207,14 +211,14 @@ tooltip.background {
 }
 
 #cpu {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
-    color: #1e66f5;
+    color: #40a02b;
     margin: 0px 10px 3px 0px;
 }
 
 #disk {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
     color:#7287fd;
     margin: 0px 10px 3px 0px;
@@ -224,7 +228,7 @@ tooltip.background {
 #custom-keybindhint,
 #language,
 #memory{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     color: #f3cc0b;
     margin: 0px 7px 3px 7px;
@@ -240,8 +244,8 @@ tooltip.background {
 #mpris{
     color: white;
     animation: repeat;
-	animation-name: blink;
-	animation-duration: 3s;
+    animation-name: blink;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -257,7 +261,7 @@ tooltip.background {
 #network{
     color: #74c7ec;
     background: transparent;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
     margin: 0px 4px 0px 0px;
 }
@@ -266,7 +270,7 @@ tooltip.background {
     background: transparent;
     color: #dce0e8;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
     margin: 0px 12px 0px 4px;
 }
 
@@ -286,16 +290,16 @@ tooltip.background {
 
 #custom-mylinux {
     color: #04a5e5;
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0px 0px 0px 5px;
+    font-size: 22px;
+    font-weight: 500;    
+    margin: 2px 0px 0px 25px;
 }
 
 #custom-weather {
     color: #df8e1d;
     background: transparent;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0px 10px 0px 0px;
 }
 

@@ -12,9 +12,10 @@
   "reload_style_on_change": true,
   "modules-left": [
       "custom/spacer",
-      "custom/mylinux",
-      "custom/spacer",
       "hyprland/workspaces",
+      "custom/spacer",
+      "custom/mylinux",
+      "custom/firefox",
       "custom/spacer",
       "mpris"
   ],
@@ -29,11 +30,11 @@
       "custom/vpn",
       "network",
       "pulseaudio",
-      "battery",
+      "bluetooth",
       "custom/numlock",
       "idle_inhibitor",
       "custom/notifications",
-      "custom/clipman",
+      "custom/cliphist",
       "custom/poweroff",
       "custom/spacer"
   ],
@@ -43,7 +44,7 @@
     "spacing": 3
   },
   "mpris": {
-    "format": "{player_icon} {dynamic}",
+    "format": " {player_icon} {dynamic}",
     "format-paused": "<span color='#f9f9f9'>{status_icon} {dynamic}</span>",
     "max-length": 50,
     "player-icons": {
@@ -76,14 +77,15 @@
      "on-click": "kitty --hold htop",
      "on-click-right": "pkill waybar & hyprctl dispatch exec waybar"
   },
-  "custom/mylinux": {
-     "format": ""
-  },
   "custom/poweroff": {
       "format": "{icon}",
       "format-icons": "",
       "on-click": "wlogout"
 
+  },
+  "custom/mylinux": {
+     "format": "",
+     "on-click": "kitty"
   },
   "custom/numlock": {
      "format": "",
@@ -132,8 +134,8 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "default": " ",
-      "active": " "
+      "default": "&#10687;",
+      "active": "&#10686;"
     },
     "persistent-workspaces": {
       "*": 5
@@ -160,10 +162,10 @@
       "on-click-right": "mode"
     }
   },
-  "custom/clipman": {
+  "custom/cliphist": {
     "format": " ",
     "rotate": 0,
-    "on-click": "clipman pick -t wofi -T'--prompt=clipman -i'", 
+    "on-click": "cliphist list | wofi --dmenu | cliphist decode | wl-copy",
     "interval": 86400,
     "tooltip": true,
     "tooltip-format": "show clipman history"
@@ -245,12 +247,23 @@
     "scroll-step": 1,
     "min-length": 2
   },
+  "custom/firefox": {
+    "format": "",
+    "on-click": "firefox"
+  },
   "custom/vpn": {
       "tooltip": true,
       "format": "  {}",
       "exec": "curl -s ipv4.icanhazip.com",
-      "interval": 60,
-      "tooltip": true
+      "interval": 600
+  },
+  "bluetooth": {
+    "format-alt": "{status}",
+    "format-on": "",
+    "format-off": "!",
+    "format-connected": "",
+    "on-click": "bluetoothctl discoverable on",
+    "tooltip-format": "{status}"
   },
   "network": {
     "tooltip": true,
@@ -258,7 +271,7 @@
     "format-icons": ["󰤟","󰤢","󰤥"],
     "rotate": 0,
     "format-ethernet": "󰈀",
-    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+    "tooltip-format": "Network: {essid}\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
     "format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": " ",
     "tooltip-format-disconnected": "Disconnected",
