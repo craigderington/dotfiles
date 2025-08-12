@@ -134,8 +134,8 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "default": "&#10687;",
-      "active": "&#10686;"
+      "default": "&#9899;",
+      "active": "&#9898;"
     },
     "persistent-workspaces": {
       "*": 5

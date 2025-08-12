@@ -58,7 +58,7 @@ tooltip.background {
 
 #workspaces button.active {
     color: #fe640b;
-    font-weight: 800;
+    font-weight: 500;
     transition: all 0.3s ease;
     padding-left: 4px;
     padding-right: 4px;
@@ -150,7 +150,7 @@ tooltip.background {
 }
 
 #custom-firefox {
-    color: #ea76cb;
+    color: #04a5e5;
     background: transparent;
     font-weight: 500;
     font-size: 22;
