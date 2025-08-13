@@ -253,7 +253,7 @@ tooltip.background {
     color: white;
     animation: repeat;
     animation-name: blink;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -347,11 +347,8 @@ tooltip.background {
 #custom-theme,
 #custom-menu{
     color: #E8EDF0;
-    background:  rgba(23, 23, 23, 0.0);
+    background: transparent;
     margin: 0px 0px 0px 0px;
-    padding-left: 1px;
-    padding-right: 1px;
-    opacity: 0.1
 }
 
 #tray,
@@ -375,8 +372,10 @@ tooltip.background {
 }
 
 #mpris{
-    font-size: 16px;
+    color:#ffffff;
+    font-size: 20px;
     font-weight: 300;
+    margin: 4px 0px 0px 100px;
 }
 
 #custom-rr_end {
