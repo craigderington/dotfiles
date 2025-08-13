@@ -2,6 +2,8 @@
 
 Welcome to my collection of configuration files (dotfiles) for a customized Hyprland desktop environment on Linux. This repository contains my personal setup for a sleek, efficient, and visually appealing workflow using Hyprland and related tools. Feel free to explore, adapt, or use these configurations as inspiration for your own setup!
 
+![Hyprland](https://raw.githubusercontent.com/craigderington/dotfiles/refs/heads/master/backgrounds/.config/backgrounds/hyprshot.png)
+
 ## Overview
 
 This repository includes configuration files for the following tools, tailored to create a cohesive and productive desktop experience:
