@@ -81,8 +81,9 @@
   "custom/poweroff": {
       "format": "{icon}",
       "format-icons": "",
-      "on-click": "wlogout"
-
+      "on-click": "wlogout --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css --buttons-per-row 4 --margin 450",
+      "tooltip": true,
+      "toooltip-format": "Exit Hyprland"
   },
   "custom/mylinux": {
      "format": "",
