@@ -15,7 +15,7 @@ WALLPAPER=$(find $WALLPAPER_DIRECTORY -type f | shuf -n 1)
 #echo $WALLPAPER
 
 hyprctl hyprpaper preload $WALLPAPER
-hyprctl hyprpaper wallpaper "DP-1,$WALLPAPER"
+hyprctl hyprpaper wallpaper "desc:Samsung Electric Company C34J79x HNTTC01019,$WALLPAPER"
 
 sleep 0.10
 

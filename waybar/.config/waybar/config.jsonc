@@ -80,7 +80,7 @@
       "format-icons": "",
       "on-click": "wlogout --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css --buttons-per-row 4 --margin 450",
       "tooltip": true,
-      "toooltip-format": "Exit Hyprland"
+      "tooltip-format": "Exit Hyprland"
   },
   "custom/mylinux": {
      "format": "",
@@ -88,7 +88,8 @@
   },
   "custom/logo": {
      "format": "&#9763;",
-     "on-click": "alacritty"
+     "on-click": "~/.config/hypr/change_wallpaper.sh",
+     "on-right-click": "kitty --hold pipes.sh -t 12"
   },
   "custom/numlock": {
      "format": "",
@@ -141,14 +142,14 @@
       "active": "&#9898;"
     },
     "persistent-workspaces": {
-      "*": 3
+      "*": 5
     }
   },
   "cava": {
     "cava_config": "~/.config/cava/config",
     "framerate": 60,
     "autosens": 1,
-    "bars": 14,
+    "bars": 16,
     "lower_cutoff_freq": 50,
     "higher_cutoff_freq": 10000,
     "method": "pulse",
