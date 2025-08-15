@@ -6,7 +6,7 @@
     font-size: 18px;
 }
 
-#custom-notifications {
+#custom-notification {
   font-family: "JetBrains Mono Nerd Font";
   font-size: 20px;
   color: #f9e2af;
@@ -341,14 +341,16 @@ tooltip.background {
     color: #4c4f69;
 }
 
-#custom-notifications,
+#custom-notification,
 #custom-spotify,
 #taskbar,
 #custom-theme,
 #custom-menu{
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 20px;
     color: #E8EDF0;
     background: transparent;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 15px 0px 3px;
 }
 
 #tray,

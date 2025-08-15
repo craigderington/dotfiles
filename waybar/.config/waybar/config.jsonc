@@ -32,9 +32,9 @@
       "network",
       "pulseaudio",
       "bluetooth",
+      "custom/notification",
       "custom/numlock",
       "idle_inhibitor",
-      "custom/notifications",
       "custom/cliphist",
       "custom/poweroff",
       "custom/spacer"
@@ -105,18 +105,18 @@
       "exec": "wttrbar --location 32808 --nerd --fahrenheit --lang en --mph",
       "return-type": "json"
   },
-  "custom/notifications": {
-    "tooltip": true,
-    "format": "{icon}",
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{} {icon}",
     "format-icons": {
-        "notification": "󰅸 ",
+        "notification": "󰅸",
         "none": "󰂜"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
-    "on-click-right": "swaync-client -d -sw",
-    "on-click": "swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
     "escape": true
   },
   "hyprland/window": {

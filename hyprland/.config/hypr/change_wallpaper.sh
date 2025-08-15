@@ -11,8 +11,9 @@
 WALLPAPER_DIRECTORY="/home/craigderington/.config/backgrounds/"
 WALLPAPER=$(find $WALLPAPER_DIRECTORY -type f | shuf -n 1)
 
-#echo $WALLPAPER_DIRECTORY
-#echo $WALLPAPER
+# echo $WALLPAPER_DIRECTORY
+# echo $WALLPAPER
+# echo $HYPRLAND_INSTANCE_SIGNATURE
 
 hyprctl hyprpaper preload $WALLPAPER
 hyprctl hyprpaper wallpaper "desc:Samsung Electric Company C34J79x HNTTC01019,$WALLPAPER"
