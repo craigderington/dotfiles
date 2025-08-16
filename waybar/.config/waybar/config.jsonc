@@ -24,15 +24,8 @@
     "clock"
   ],
   "modules-right": [
-      "custom/weather",
-      "disk",
-      "cpu",
-      "memory",
       "custom/vpn",
       "network",
-      "pulseaudio",
-      "bluetooth",
-      "custom/notification",
       "custom/numlock",
       "idle_inhibitor",
       "custom/cliphist",
