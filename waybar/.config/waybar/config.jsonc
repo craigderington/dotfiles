@@ -26,6 +26,7 @@
   "modules-right": [
       "custom/vpn",
       "network",
+      "custom/spacer",
       "custom/numlock",
       "idle_inhibitor",
       "custom/cliphist",
