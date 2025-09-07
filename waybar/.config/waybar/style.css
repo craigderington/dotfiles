@@ -7,16 +7,16 @@
 }
 
 #custom-notification {
-  font-family: "JetBrains Mono Nerd Font";
-  font-size: 20px;
-  color: #f9e2af;
-  margin: 2px 0px 0px 0px;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 20px;
+    color: #f9e2af;
+    margin: 2px 0px 0px 0px;
 }
 
 window#waybar {
-    background: transparent;    
+    background: transparent;
     border: 1px solid #11111b;
-    border-radius: 5px;
+    border-radius: 5px;    
     padding: 5px;
 }
 
@@ -28,11 +28,11 @@ tooltip {
 }
 
 tooltip * {
-	background:	transparent;
+    background: transparent;
 }
 
 tooltip.background {
-	background:	rgba(17,17,27,0.65);
+    background: rgba(17,17,27,0.65);
 }
 
 #workspaces{
@@ -54,6 +54,7 @@ tooltip.background {
     transition: 0.2s ease;
     padding-left: 4px;
     padding-right: 4px;
+    border: none;
 }
 
 #workspaces button.active {
@@ -65,16 +66,16 @@ tooltip.background {
 }
 
 #workspaces button:hover {
-    background: transparent;
-    color: #dce0e8;
-    animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    transition: none;
 }
 
 #taskbar button {
     box-shadow: none;
-	text-shadow: none;
-	font-size: 4px;
+    text-shadow: none;
+    font-size: 4px;
     padding: 0px;
     border-radius: 9px;
     margin-bottom: 3px;

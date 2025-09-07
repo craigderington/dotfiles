@@ -32,8 +32,6 @@
       "network",
       "pulseaudio",
       "bluetooth",
-      "custom/notification",
-      "custom/numlock",
       "idle_inhibitor",
       "custom/cliphist",
       "custom/poweroff",
@@ -290,13 +288,13 @@
     "tooltip-format": "{icon} {desc} // {volume}%",
     "scroll-step": 5,
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [" "," "," "
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" "," ","  "
       ]
     }
   },
