@@ -260,7 +260,7 @@
       "interval": 600
   },
   "bluetooth": {
-    "format-alt": "{status}",
+    "format-alt": "",
     "format-on": "",
     "format-off": "",
     "format-connected": "",
