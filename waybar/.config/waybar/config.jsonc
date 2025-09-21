@@ -264,8 +264,8 @@
     "format-on": "",
     "format-off": "",
     "format-connected": "",
-    "on-click": "bluetoothctl discoverable on",
-    "on-right-click": "bluetoothctl pairable on",
+    "on-click": "bzmenu -l rofi",
+    "on-right-click": "bzmenu -l rofi",
     "tooltip-format": "{status}"
   },
   "network": {
