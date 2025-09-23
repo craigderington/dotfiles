@@ -1,5 +1,3 @@
-@import "mocha.css";
-
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-weight: 400; 
@@ -159,15 +157,15 @@ tooltip.background {
 }
 
 #custom-logo {
-    color: #fe640b;
+    color: #181825;
     background: transparent;
     font-weight: 400;
-    font-size: 36px;
-    margin: -4px 4px 0px 4px;
+    font-size: 20px;
+    margin: -2px 4px 0px 4px;
 }
 
 #bluetooth {
-    color: #ffffff;
+    color: #181926;
     background: transparent;
     font-size: 24px;
     font-weight: 300;
@@ -175,7 +173,7 @@ tooltip.background {
 }
 
 #bluetooth.connected {
-    color: #fe640b;
+    color: #5b6078;
     background: transparent;
     font-size: 24px;
     font-weight: 400;
@@ -199,7 +197,7 @@ tooltip.background {
 }
 
 #custom-cliphist {
-    color: #ffffff;
+    color: #11111b;
     font-weight: 300;
     font-size: 20px;
     margin: 2px 5px 0px 5px;
@@ -221,7 +219,7 @@ tooltip.background {
 #pulseaudio {
     font-weight: 500;
     font-size: 20px;
-    color: #04a5e5;
+    color: #11111b;
     background: transparent;
     opacity: 1;
     margin: 0px 4px 0px 0px;
@@ -230,14 +228,14 @@ tooltip.background {
 #cpu {
     font-weight: 500;
     font-size: 20px;
-    color: #40a02b;
+    color: #1e1e2e;
     margin: 0px 10px 3px 0px;
 }
 
 #disk {
     font-weight: 500;
     font-size: 20px;
-    color:#7287fd;
+    color: #11111b;
     margin: 0px 10px 3px 0px;
 }
 
@@ -247,7 +245,7 @@ tooltip.background {
 #memory{
     font-weight: 400;
     font-size: 20px;
-    color: #f3cc0b;
+    color: #51576d;
     margin: 0px 7px 3px 7px;
 }
 
@@ -258,25 +256,15 @@ tooltip.background {
     margin: 0px 14px 0px 10px; 
 }
 
-#mpris{
-    color: white;
-    animation: repeat;
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes blink {
-    to {
-        color: #4a4a4a;
-        
-    }
+#mpris {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #292a30;
+  margin: 4px;
 }
 
 #network{
-    color: #74c7ec;
+    color: #11111b;
     background: transparent;
     font-weight: 500;
     font-size: 20px;
@@ -285,7 +273,7 @@ tooltip.background {
 
 #custom-vpn {
     background: transparent;
-    color: #dce0e8;
+    color: #11111b;
     font-size: 18px;
     font-weight: 600;
     margin: 0px 12px 0px 4px;
@@ -306,14 +294,14 @@ tooltip.background {
 }
 
 #custom-mylinux {
-    color: #04a5e5;
+    color: #232634;
     font-size: 22px;
     font-weight: 500;    
     margin: 2px 0px 0px 25px;
 }
 
 #custom-weather {
-    color: #df8e1d;
+    color: #232634;
     background: transparent;
     font-size: 20px;
     font-weight: 500;

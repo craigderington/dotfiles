@@ -43,12 +43,12 @@
     "spacing": 3
   },
   "mpris": {
-    "format": "&#127911; {status_icon} {dynamic}",
+    "format": "<span color='#11111b'>&#127911; {status_icon} {dynamic}</span>",
     "format-paused": "&#127911; {status_icon} {dynamic}",
     "max-length": 50,
     "status-icons": {
-      "playing": "&#9654;",
-      "paused": "&#9208;"
+      "playing": "&#9208;",
+      "paused": "&#9654;"
     }
   },
   "disk": {
@@ -85,7 +85,7 @@
      "on-click": "kitty"
   },
   "custom/logo": {
-     "format": "&#9763;",
+     "format": "🈲",
      "on-click": "~/.config/hypr/change_wallpaper.sh",
      "on-right-click": "kitty --hold pipes.sh -t 12"
   },
@@ -136,8 +136,8 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "default": "&#9899;",
-      "active": "&#9898;"
+      "default": "⬛️",
+      "active": "🟥"
     },
     "persistent-workspaces": {
       "*": 5
