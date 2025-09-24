@@ -1,13 +1,13 @@
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-weight: 400; 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #custom-notification {
     font-family: "JetBrains Mono Nerd Font";
     font-size: 20px;
-    color: #f9e2af;
+    color: #5b6078;
     margin: 2px 0px 0px 0px;
 }
 
@@ -149,7 +149,7 @@ tooltip.background {
 }
 
 #custom-firefox {
-    color: #fe640b;
+    color: #000000;
     background: transparent;
     font-weight: 500;
     font-size: 22;
@@ -189,7 +189,7 @@ tooltip.background {
 }
 
 #idle_inhibitor{
-    color: #d20f39;
+    color: #5b6078;
     font-size: 23px;
     font-weight: bold;
     background: transparent;    
@@ -197,14 +197,14 @@ tooltip.background {
 }
 
 #custom-cliphist {
-    color: #11111b;
+    color: #5b6078;
     font-weight: 300;
     font-size: 20px;
     margin: 2px 5px 0px 5px;
 }
 
 #clock{
-    color: #11111b;
+    color: #5b6078;
     font-size: 20px;
     font-weight: 600;
     font-family: "JetBrains Mono Nerd Font";
@@ -228,14 +228,14 @@ tooltip.background {
 #cpu {
     font-weight: 500;
     font-size: 20px;
-    color: #1e1e2e;
+    color: #5b6078;
     margin: 0px 10px 3px 0px;
 }
 
 #disk {
     font-weight: 500;
     font-size: 20px;
-    color: #11111b;
+    color: #5b6078;
     margin: 0px 10px 3px 0px;
 }
 
@@ -245,26 +245,26 @@ tooltip.background {
 #memory{
     font-weight: 400;
     font-size: 20px;
-    color: #51576d;
+    color: #5b6078;
     margin: 0px 7px 3px 7px;
 }
 
 #custom-poweroff {
     font-weight: 500;
     font-size: 25px;
-    color:#1e66f5;
+    color: #5b6078;
     margin: 0px 14px 0px 10px; 
 }
 
 #mpris {
   padding-left: 10px;
   padding-right: 10px;
-  color: #292a30;
+  color: #5b6078;
   margin: 4px;
 }
 
 #network{
-    color: #11111b;
+    color: #5b6078;
     background: transparent;
     font-weight: 500;
     font-size: 20px;
@@ -273,9 +273,9 @@ tooltip.background {
 
 #custom-vpn {
     background: transparent;
-    color: #11111b;
+    color: #5b6078;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0px 12px 0px 4px;
 }
 
@@ -301,7 +301,7 @@ tooltip.background {
 }
 
 #custom-weather {
-    color: #232634;
+    color: #5b6078;
     background: transparent;
     font-size: 20px;
     font-weight: 500;
@@ -313,7 +313,7 @@ tooltip.background {
 #custom-weather.fog,
 #custom-weather.mostly_cloudy,
 #custom-weather.partly_cloudy {
-    color: #7c7f93;
+    color: #5b6078;
 }
 
 #custom-weather.clear,
@@ -327,7 +327,7 @@ tooltip.background {
 #custom-weather.moderate,
 #custom-weather.patchy_rain,
 #custom-weather.rain {
-    color: #1e66f5;
+    color: #5b6078;
 }
 
 #custom-weather.mist {
@@ -335,7 +335,7 @@ tooltip.background {
 }
 
 #custom-weather.thunderstorm {
-    color: #4c4f69;
+    color: #5b6078;
 }
 
 #custom-notification,
@@ -345,7 +345,7 @@ tooltip.background {
 #custom-menu{
     font-family: "JetBrains Mono Nerd Font";
     font-size: 20px;
-    color: #E8EDF0;
+    color: #5b6078;
     background: transparent;
     margin: 0px 15px 0px 3px;
 }
@@ -370,7 +370,7 @@ tooltip.background {
 }
 
 #mpris{
-    color:#ffffff;
+    color: #5b6078;
     font-size: 20px;
     font-weight: 300;
     margin: 4px 0px 0px 100px;
@@ -415,11 +415,9 @@ tooltip.background {
 	
 }
 
-
 #battery.critical:not(.charging) {
     color: red;
 }
-
 
 #taskbar {
     padding: 1px;
