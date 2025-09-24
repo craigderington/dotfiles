@@ -200,8 +200,8 @@
     "format": "{icon}",
     "rotate": 0,
     "format-icons": {
-      "deactivated": "",
-      "activated": ""
+      "deactivated": "🟢",
+      "activated": "🔴"
     }
   },
   "clock": {

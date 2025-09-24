@@ -169,7 +169,7 @@ tooltip.background {
     background: transparent;
     font-size: 24px;
     font-weight: 300;
-    margin: 5px 14px 4px 0px; 
+    margin: 5px 5px 4px 0px; 
 }
 
 #bluetooth.connected {
@@ -190,10 +190,10 @@ tooltip.background {
 
 #idle_inhibitor{
     color: #5b6078;
-    font-size: 23px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 200;
     background: transparent;    
-    margin: 1px 14px 0px 4px;
+    margin: 1px 4px 0px 4px;
 }
 
 #custom-cliphist {
@@ -253,7 +253,8 @@ tooltip.background {
     font-weight: 500;
     font-size: 25px;
     color: #5b6078;
-    margin: 0px 14px 0px 10px; 
+
+    margin: 0px 14px 0px 5px; 
 }
 
 #mpris {
