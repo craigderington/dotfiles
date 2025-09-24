@@ -165,7 +165,7 @@
     }
   },
   "custom/cliphist": {
-    "format": " ",
+    "format": "📋️",
     "rotate": 0,
     "on-click": "cliphist list | wofi --dmenu | cliphist decode | wl-copy",
     "interval": 86400,
