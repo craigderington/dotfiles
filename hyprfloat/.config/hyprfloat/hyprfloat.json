@@ -1,0 +1,19 @@
+{
+	"terminal_classes":[
+		"kitty",
+		"alacritty",
+		"org.kde.konsole",
+		"com.mitchellh.ghostty"
+	],
+	"ignore_titles":[
+		"cava",
+		"btop"
+	],
+	"monitors":{
+		"DP-2":{
+			"width":800,
+			"height":720,
+			"offset": [1320, 420]
+		},
+	}
+}
