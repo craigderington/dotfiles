@@ -21,9 +21,9 @@ $haskell\
 $python\
 [](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
-$time\
-[ ](fg:purple)\
+[](fg:blue bg:#181825)\
+$cmd_duration\
+[](fg:#181825)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -168,14 +168,12 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:mantle"
+style = "bg:blue"
 format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 
-[time]
-disabled = false
-time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+[cmd_duration]
+style = "bg:#181825"
+format = '[  $duration ]($style)'
 
 [line_break]
 disabled = false
