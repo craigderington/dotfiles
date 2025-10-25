@@ -1,0 +1,1 @@
+/home/craig/.config/omarchy/current/theme/neovim.lua
