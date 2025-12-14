@@ -107,7 +107,7 @@ truncation_symbol = "…/"
 
 [hostname]
 style = "bg:surface0 fg:text"
-format = "[@$hostname] "
+format = '[@$hostname]($style)' 
 ssh_only = true
 
 [directory.substitutions]
