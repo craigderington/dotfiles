@@ -3,7 +3,7 @@
 format = """
 [](surface0)\
 $os\
-$username\
+$username$hostname\
 [](bg:peach fg:surface0)\
 $directory\
 [](fg:peach bg:green)\
@@ -104,6 +104,11 @@ style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
+
+[hostname]
+style = "bg:surface0 fg:text"
+format = "[@$hostname] "
+ssh_only = true
 
 [directory.substitutions]
 "Documents" = "󰈙 "
