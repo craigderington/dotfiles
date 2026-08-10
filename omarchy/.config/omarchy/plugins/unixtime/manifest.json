@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "unixtime",
+  "name": "Unix timestamp",
+  "version": "0.1.0",
+  "author": "cd",
+  "license": "MIT",
+  "description": "Live unix timestamp in the bar, backed by the waybar-unixtime binary.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Unix timestamp",
+    "description": "Live unix epoch clock. Click copies, middle click toggles seconds/millis, scroll walks the formats.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaults": {
+      "intervalMs": 1000,
+      "notifyOnCopy": true,
+      "binPath": "$HOME/.cargo/bin/waybar-unixtime"
+    },
+    "schema": [
+      {
+        "key": "intervalMs",
+        "type": "integer",
+        "label": "Refresh interval (ms)",
+        "min": 100,
+        "max": 60000,
+        "step": 100,
+        "defaultValue": 1000
+      },
+      {
+        "key": "notifyOnCopy",
+        "type": "boolean",
+        "label": "Notify when a timestamp is copied",
+        "defaultValue": true
+      },
+      {
+        "key": "binPath",
+        "type": "string",
+        "label": "Path to waybar-unixtime",
+        "defaultValue": "$HOME/.cargo/bin/waybar-unixtime"
+      }
+    ]
+  }
+}

@@ -17,6 +17,7 @@ This repository includes configuration files for the following tools, tailored t
 - **Kitty**: a slick Terminal Emulator with easy customization.
 - **Backgrounds**: Hyprpaper backgrounds.
 - **Starship**: the coolest terminal prompt on every planet.
+- **Omarchy**: user plugins for the Omarchy Quickshell shell — currently `unixtime`, a live unix-epoch bar widget with a hover panel of every timestamp/date format.
 
 
 These dotfiles reflect my preferences for a minimal yet functional setup, optimized for both productivity and aesthetics.
@@ -34,6 +35,9 @@ dotfiles/
 │   ├── style.css           # Waybar styling
 ├── alacritty/
 │   ├── alacritty.toml       # Alacritty terminal settings
+├── omarchy/
+│   └── .config/omarchy/plugins/
+│       └── unixtime/        # Quickshell bar widget (see its own README)
 └── README.md               # This file
 ```
 
